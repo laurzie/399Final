@@ -179,7 +179,7 @@ a.skip:focus{
 }
 
 .index-link:visited{
-    color: blue;
+    color: #0539b6;
 }
 
 /* Hollywood Gallery */
@@ -325,10 +325,10 @@ a.skip:focus{
 .wrapper h2{
   grid-column-start: 1;
   grid-column-end: 2;
-  color: #b48c36;
+  color:  #003366;
   padding: 20px 20px 20px 20px;
   align-self: center;
-  font-size:  55px;
+  font-size:  60px;
   font-family: "Spectral", "Helvetica Neue", sans-serif;
 
 }
