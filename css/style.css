@@ -122,7 +122,7 @@ a.skip:focus{
 
 .index-title {
   display: grid;
-  grid-template-columns: 1ref 1ref;
+  grid-template-columns: 1fr;
 }
 .index-title h1{
   grid-column-start: 1;
@@ -325,10 +325,11 @@ a.skip:focus{
 .wrapper h2{
   grid-column-start: 1;
   grid-column-end: 2;
-  color:  #003366;
+  color: #b48c36;
   padding: 20px 20px 20px 20px;
   align-self: center;
-  font-size:  60px;
+  font-weight: bold;
+  font-size:  70px;
   font-family: "Spectral", "Helvetica Neue", sans-serif;
 
 }
@@ -421,7 +422,6 @@ a.skip:focus{
   vertical-align: middle;
   height: 400px;
   width: 100%;
-  object-fit: ;
 }
 
 /* Slideshow container */
@@ -661,7 +661,6 @@ img.desktop {
  }
  .hollywood-sign2{
    height:250px;
-   position: center;
    background-size: 100% 60%;
 }
 
