@@ -318,34 +318,35 @@ a.skip:focus{
   display: grid;
   grid-template-columns: 45% auto auto;
   grid-gap: 10px 20px;
+
+  /* background-color:  #7b7b7b; */
 }
 .wrapper h2{
   grid-column-start: 1;
   grid-column-end: 2;
-  background: #636969;
-  color: white;
+  color: #b48c36;
   padding: 20px 20px 20px 20px;
   align-self: center;
   font-size:  40px;
-  font-family: "Amethysta", "Helvetica Neue", sans-serif;
+  font-family: "Spectral", "Helvetica Neue", sans-serif;
 
 }
 .wrapper img{
   grid-column-start: 2;
   grid-column-end: 4;
   width: 100%;
-  background:yellow;
   max-height: 25vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper p{
   grid-column-start: 1;
   grid-column-end: 4;
-  background: #e5e6e6;
   min-height: 10vh;
-  font-size: 16px;
-  font-family: "Amethysta", "Helvetica Neue", sans-serif;
-  margin: 0px 0px 20px 0px
+  font-size: 20px;
+  font-family: "Spectral", "Helvetica Neue", sans-serif;
+  padding: 20px 20px 20px 20px;
+
 }
 
 .critically-title h1{
@@ -538,7 +539,12 @@ img.mobile{
   padding: 20px 20px 20px 20px ;
 }
 
-
+.full-page{
+  background-color: #EAEAEA;
+}
+.personal{
+  background-color: #EAEAEA;
+}
 .personal-title{
   color: black;
   font-family: "Staatliches", "Helvetica Neue", sans-serif;
@@ -550,20 +556,23 @@ img.mobile{
   color: black;
   font-size: 40px;
   margin: 0px 0px 20px 20px;
+  font-family: "Spectral", "Helvetica Neue", sans-serif;
 }
 
 .personal-p h3{
-  color: #ffd11a;
+  color: #b48c36;
   font-size: 50px;
   margin: 0px 0px 20px 20px;
+  font-family: "Spectral", "Helvetica Neue", sans-serif;
 }
 
 .personal-p p{
-  color: grey;
+  color: black;
   font-size: 20px;
   margin: 20px 20px 20px 20px;
   text-indent: 50px;
   width: 80vw;
+  font-family: "Spectral", "Helvetica Neue", sans-serif;
 }
 
 .personal-p img{
@@ -738,13 +747,12 @@ index-para{
   }
 
 .personal-p h3{
-  color: #ffd11a;
   font-size: 50px;
   margin: 0px 0px 20px 20px;
 }
 
 .personal-p p{
-  color: grey;
+  color: #1d1e22;
   font-size: 20px;
   margin: 20px 20px 20px 20px;
   text-indent: 50px;
