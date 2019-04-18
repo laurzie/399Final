@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Staatliches:100,300,400,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Amethysta:100,300,400,600">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:100,300,400,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral:100,300,400,600">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Critically Acclaimed Films </title>
@@ -40,10 +41,63 @@
   <h1>Critically Acclaimed Films</h1>
 </header>
 
-
-
-
 <main id= 'main'>
+  <div class = "awards">
+  <h1 >Academy Award for Best Picture</h1>
+  </div>
+  <div class ="critical-accor">
+  <button class="accordion">Academy Award for Best Picture 1930s</button>
+  <div class="panel">
+    <p> At the time this award was called the Academy Award for Outstanding Production
+      <ul>
+      <li>1929/30 - All Quiet on the Western Front</li>
+      <li>1930/31 - Cimarron</li>
+      <li>1931/1932 - Grand Hotel</li>
+      <li>1932/33 - Cavalcade</li>
+      <li>1934 - It Happened One Night	</li>
+      <li>1935 - Mutiny on the Bounty</li>
+      <li>1936 - The Great Ziegfeld</li>
+      <li>1937 - The Life of Emile Zola</li>
+      <li>1938 - You Can't Take It with You</li>
+      <li>1939 - Gone with the Wind</li>
+    </ul>
+    </p>
+  </div>
+  <button class="accordion">Academy Award for Best Picture 1940s</button>
+  <div class="panel">
+    <p> At the time this award was called the Academy Award for Outstanding Motion Picture</p>
+      <ul>
+      <li>1940 - Rebecca</li>
+      <li>1941 - How Green Was My Valley</li>
+      <li>1942 - Mrs. Miniver</li>
+      <li>1943 - Casablanca</li>
+      <li>1944 - Going My Way</li>
+      <li>1945 - The Lost Weekend</li>
+      <li>1946 - The Best Years of Our Lives</li>
+      <li>1947 - Gentleman's Agreement</li>
+      <li>1948 - Hamlet</li>
+      <li>1949 - All the King's Men</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Academy Award for Best Picture 1950s</button>
+  <div class="panel">
+    <p> At the time this award was called the Academy Award for Best Motion Picture
+      <ul>
+      <li>1950 - All About Eve</li>
+      <li>1951 - An American in Paris</li>
+      <li>1952 - The Greatest Show on Earth</li>
+      <li>1953 - rom Here to Eternity</li>
+      <li>1954 - On the Waterfront</li>
+      <li>1955 - Marty</li>
+      <li>1956 - Around the World in 80 Days</li>
+      <li>1957 - The Bridge on the River Kwai</li>
+      <li>1958 - Gigi</li>
+      <li>1959 - Ben-Hur</li>
+    </ul>
+    </p>
+  </div>
+</div>
 
 <div class = "wrapper">
     <h2>Citizen Kane</h2>
@@ -122,6 +176,31 @@
     };
 
 window.addEventListener('scroll', stickyNavigation);
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active-best");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+  acc[i].addEventListener("onkeydown", function(e) {
+    if(e.keycode == "13"){
+    this.classList.toggle("active-best");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+  });
+}
   </script>
   </main>
     <footer>
